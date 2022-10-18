@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Giovanni Beltran Avila">
+    <meta name="description" content="Web App Gestión de reservas">
+    <title>App Reservas - Categorias</title>
+    <link rel="icon" href="/assets/img/calendario.png">
+
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/areas/js/ext/ext.js"></script>
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/fonts/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/css.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-image-nav"></nav>
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Gestionar Categoria</h1>
+                </div>
+            </div>
+        </section>
+        <div class="container row-pd-20">
+            <form method="POST" class="row g-3 needs-validation" novalidate="" autocomplete="off">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" maxlength="4000" required>
+                    <div class="valid-feedback">
+                        Validado!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debe ingresar un nombre.
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea id="description" class="form-control" rows="5" maxlength="4000" required></textarea>
+                    <div class="valid-feedback">
+                        Validado!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debe ingresar una descripción.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar!</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer id="footer" class="text-center text-lg-start text-dark"></footer>
+    <script src="/areas/js/ext/session.js"></script>
+    <script src="/areas/js/category/category.js"></script>
+    <script type="text/javascript">
+        init();
+    </script>
+</body>
+
+</html>

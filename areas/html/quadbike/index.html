@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="author" content="Giovanni Beltran Avila">
+	<meta name="description" content="Web App Gestión de reservas">
+	<title>App Reservas - Cuatrimotos</title>
+	<link rel="icon" href="/assets/img/calendario.png">
+
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/areas/js/ext/ext.js"></script>
+
+    <script type="text/javascript" src="/areas/js/quadbike/index.js"></script>
+
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/fonts/css/all.min.css" rel="stylesheet">
+	<link href="/assets/css/css.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-image-nav"></nav>
+	<main>
+        <section class="py-5 text-center container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Cuatrimotos</h1>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 text-center container">
+            <table id="tableJS" class="table">
+            </table>
+        </section>
+	</main>
+    <div id="comments"></div>
+    <footer id="footer" class="text-center text-lg-start text-dark"></footer>
+	<script src="/areas/js/ext/session.js"></script>
+    <script src="/areas/js/message/message.js"></script>
+    <script type="text/javascript">
+        init();
+    </script>
+</body>
+</html>
